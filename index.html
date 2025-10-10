@@ -13,12 +13,14 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  
   <body>
     <!-- Header -->
     <header class="header">
       <div class="header__inner">
-        <a class="brand" href="#home" aria-label="Do sekcji Home"><img src="logo.png" alt="Effikoy logo"></a>
-        <nav class="nav" aria-label="Główne menu">
+        <a class="brand" href="#home" aria-label="To Home"><img src="logo.png" alt="Effikoy logo"></a>
+		<button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+        <nav class="nav" aria-label="Main menu">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
@@ -26,12 +28,8 @@
       </div>
     </header>
 
-    <!-- Pasek postępu pod headerem -->
-    <div class="progress-wrap">
-      <div class="progress" id="progress"></div>
-    </div>
-
     <main id="viewport">
+	
       <!-- HOME -->
       <section id="home" class="slide">
         <div class="container">
@@ -178,9 +176,10 @@
           </div>
         </div>
       </section>
+	  
     </main>
 
-    <footer class="footer-in-slide">
+    <footer class="footer">
       <div class="footer__inner">© <span id="y"></span> Effikoy - Piotr Jamiński</div>
     </footer>
 
