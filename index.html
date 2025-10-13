@@ -1,190 +1,164 @@
 <!doctype html>
 <html lang="pl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Effikoy Piotr Jamiński - Efficient Code. Real Effect.</title>
-    <meta name="description" content="Piotr Jamiński - Lead .NET & Azure Developer. Cloud-native, microservices, CI/CD." />
-    <link rel="icon" href="logo.png" />
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css" />
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-  </head>
-  
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="header__inner">
-        <a class="brand" href="#home" aria-label="To Home"><img src="logo.png" alt="Effikoy logo"></a>
-		<button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
-        <nav class="nav" aria-label="Main menu">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="viewport">
-	
-      <!-- HOME -->
-      <section id="home" class="slide">
-        <div class="container">
-          <h1 class="title">Efficient Code. Real Effect.</h1>
-          <p class="lead">
-            I’m Piotr Jamiński - Lead .NET & Azure Developer. I build future-ready cloud systems
-            where architecture, automation, and craftsmanship drive real business outcomes.
-          </p>
-          <p class="lead" style="margin-top:10px">
-            I believe great software is more than code - it’s about impact. Let’s build it together.
-          </p>
-          <div class="cta">
-            <a class="btn btn-primary" href="#"
-               data-user="piotr" data-domain="effikoy.com"
-               onclick="window.location.href='mailto:' + this.dataset.user + '@' + this.dataset.domain; return false;">
-              Contact me
-            </a>
-            <a class="btn btn-ghost" href="#about">See how I work</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" class="slide">
-        <div class="container">
-          <h2 class="section-title">About</h2>
-          <div class="two-col">
-            <article class="card">
-              <h3 style="margin:0 0 8px">What I do (value & outcomes)</h3>
-              <ul class="list">
-                <li><strong>Cloud-native architecture</strong> that scales and stays maintainable for years.</li>
-                <li><strong>Delivery acceleration</strong> through automation, CI/CD and pragmatic code reviews.</li>
-                <li><strong>Resilient integrations</strong> using Azure Service Bus, Event Grid and Functions.</li>
-                <li><strong>Observability by default</strong>: structured logging, tracing, dashboards and alerts.</li>
-                <li><strong>Technical leadership</strong>: improving architecture, mentoring, and raising code quality culture.</li>
-              </ul>
-            </article>
-
-            <article class="card">
-              <h3 style="margin:0 0 8px">How I work (principles)</h3>
-              <ul class="list">
-                <li><strong>Architecture first, code second</strong> - clarity before implementation.</li>
-                <li><strong>Domain-driven design</strong> - clear boundaries, meaningful models, fewer side effects.</li>
-                <li><strong>Automation wins</strong> - pipelines, tests, consistent releases.</li>
-                <li><strong>Observable from day one</strong> - measure, don’t guess.</li>
-                <li><strong>Pragmatism over rigidity</strong> - outcomes over frameworks.</li>
-              </ul>
-            </article>
-
-            <article class="card">
-              <h3 style="margin:0 0 8px">Selected snapshots</h3>
-              <ul class="list">
-                <li><strong>Microservices modernization</strong> - reduced complexity and faster delivery through better boundaries and async messaging.</li>
-                <li><strong>Integration reliability</strong> - event-driven flows with retry logic, idempotency, and monitoring.</li>
-                <li><strong>Code review evolution</strong> - focus shifted from naming to business logic verification and shared understanding.</li>
-                <li><strong>Data migrations</strong> - EF Core migrations, schema evolution, and zero-downtime SQL scripts.</li>
-                <li><strong>Testing infrastructure</strong> - realistic integration tests powered by Testcontainers.</li>
-              </ul>
-              <p style="margin:8px 0 0; color:var(--muted); font-size:.95rem">
-                Domains: IoT, real estate, insurance, e-commerce.&nbsp;Details on request.
-              </p>
-            </article>
-
-            <article class="card">
-              <h3 style="margin:0 0 8px">Tech toolkit</h3>
-              <ul class="list">
-                <li><strong>.NET 8 / C#</strong> - DDD, CQRS, async messaging, clean architecture</li>
-                <li><strong>Azure</strong> - Functions, Service Bus, Event Hub, API Management, Cosmos DB, SQL</li>
-                <li><strong>CI/CD</strong> - Azure DevOps pipelines, quality gates, test automation (xUnit, Playwright)</li>
-                <li><strong>EF Core</strong> - migrations, data refactors, performance tuning</li>
-                <li><strong>Testing</strong> - integration tests, Testcontainers, mocking, synthetic data</li>
-              </ul>
-            </article>
-
-            <article class="card" style="grid-column:1/-1">
-              <h3 style="margin:0 0 8px">Why "Effikoy"?</h3>
-              <p>
-                In Esperanto, <em>efiko</em> means "effect" (plural: <em>efikoj</em> - outcomes). The brand stands for
-                <strong>efficiency</strong> and <strong>real results</strong>: delivering impact, not just implementation.
-              </p>
-              <p style="margin:8px 0 0"><strong>Efficient Code. Real Effect.</strong></p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact" class="slide">
-        <div class="container" itemscope itemtype="https://schema.org/Person">
-          <h2 class="section-title">Contact</h2>
-          <p class="lead" style="margin:0 0 18px;color:var(--muted)">
-            Let’s connect - I help teams design <strong>future-ready .NET &amp; Azure platforms</strong>, reduce
-            complexity with <strong>event-driven architecture</strong>, and speed up delivery via <strong>CI/CD</strong>.
-            Typical engagements: <em>architecture reviews</em>, <em>migration plans</em>, <em>hands-on microservices</em>,
-            <em>observability</em> and <em>mentoring</em>.
-          </p>
-
-          <div class="card contact-card">
-            <p class="contact-head">
-              <strong itemprop="name">Piotr Jamiński</strong><br>
-              <span itemprop="jobTitle">Lead .NET &amp; Azure Developer</span>
-            </p>
-
-            <div class="actions" role="group" aria-label="Contact actions">
-              <a class="btn btn-primary"
-                 href="https://www.linkedin.com/in/piotr-jami%C5%84ski/"
-                 target="_blank" rel="noopener" itemprop="sameAs" aria-label="Open LinkedIn profile">
-                <span class="icon" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zM4.943 13.5V6.169H2.542V13.5h2.401zm-1.2-8.309c.837 0 1.358-.554 1.358-1.248-.015-.709-.521-1.248-1.342-1.248-.82 0-1.358.54-1.358 1.248 0 .694.52 1.248 1.327 1.248h.015zM13.458 13.5v-4.186c0-2.24-1.197-3.283-2.793-3.283-1.288 0-1.872.71-2.198 1.211v-1.04H6.066c.03.687 0 7.298 0 7.298h2.401V9.43c0-.217.016-.435.08-.591.173-.435.568-.887 1.232-.887.869 0 1.217.668 1.217 1.648V13.5h2.462z"/>
-                  </svg>
-                </span>
-                LinkedIn
-              </a>
-
-              <a class="btn btn-ghost"
-                 href="#"
-                 data-user="piotr" data-domain="effikoy.com"
-                 onclick="window.location.href='mailto:' + this.dataset.user + '@' + this.dataset.domain; return false;"       
-                 aria-label="Send email to Piotr">
-                <span class="icon" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.236l7.4 6.29a1 1 0 0 0 1.2 0L20 8.236V18H4z"/>
-                  </svg>
-                </span>
-                Email
-              </a>
-
-              <a class="btn btn-ghost"
-                 href="https://github.com/pjaminski"
-                 target="_blank" rel="noopener" itemprop="sameAs" aria-label="Open GitHub profile">
-                <span class="icon" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
-                      0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 
-                      2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
-                      0 0 .67-.21 2.2.82a7.48 7.48 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 
-                      1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2.0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                  </svg>
-                </span>
-                GitHub
-              </a>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Effikoy Piotr Jamiński - Efficient Code. Real Effect.</title>
+      <meta name="description" content="Piotr Jamiński - Lead .NET & Azure Developer. Cloud-native, microservices, CI/CD." />
+      <link rel="icon" href="logo.png" />
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+      <!-- Styles -->
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+   </head>
+   <body>
+      <!-- Header -->
+      <header class="header">
+         <div class="header__inner">
+            <a class="brand" href="#home" aria-label="To Home"><img src="logo.png" alt="Effikoy logo"></a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+            <nav class="nav" aria-label="Main menu">
+               <a href="#home">Home</a>
+               <a href="#about">About</a>
+               <a href="#contact">Contact</a>
+            </nav>
+         </div>
+      </header>
+      <main id="viewport">
+         <!-- HOME -->
+         <section id="home" class="slide">
+            <div class="container">
+               <h1 class="title">Efficient Code. Real Effect.</h1>
+               <p class="lead">
+                  I’m Piotr Jamiński - Lead .NET & Azure Developer. I build future-ready cloud systems
+                  where architecture, automation, and craftsmanship drive real business outcomes.
+               </p>
+               <p class="lead" style="margin-top:10px">
+                  I believe great software is more than code - it’s about impact. Let’s build it together.
+               </p>
+               <div class="cta">
+                  <a class="btn btn-primary" href="#"
+                     data-user="piotr" data-domain="effikoy.com"
+                     onclick="window.location.href='mailto:' + this.dataset.user + '@' + this.dataset.domain; return false;">
+                  Contact me
+                  </a>
+                  <a class="btn btn-ghost" href="#about">See how I work</a>
+               </div>
             </div>
-          </div>
-        </div>
-      </section>
-	  
-    </main>
-
-    <footer class="footer">
-      <div class="footer__inner">© <span id="y"></span> Effikoy - Piotr Jamiński</div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-  </body>
+         </section>
+         <!-- ABOUT -->
+         <section id="about" class="slide">
+            <div class="container">
+               <h2 class="section-title">About</h2>
+               <article class="card" style="grid-column:1/-1">
+                  <h3>What I do</h3>
+                  <p>
+                     I design and build <strong>cloud-native systems</strong> that stay maintainable, scalable, and observable for years.
+                     My focus is on creating architectures that evolve gracefully, enabling teams to move fast without losing control.
+                     From event-driven microservices to resilient messaging and CI/CD automation - I help transform ideas into durable
+                     and measurable solutions.
+                  </p>
+                  <p>
+                     Beyond the technical layer, I bring a <strong>leadership mindset</strong> - mentoring developers, shaping better code review culture, 
+                     and aligning engineering with business outcomes. My work combines <strong>architectural clarity</strong>, <strong>automation</strong>, and <strong>craftsmanship</strong>.
+                  </p>
+               </article>
+               <div class="two-col">
+                  <article class="card">
+                     <h3>My approach</h3>
+                     <ul class="list">
+                        <li><i data-lucide="rocket"></i><strong>Futuristic</strong> - vision-driven and forward-thinking.</li>
+                        <li><i data-lucide="stars"></i><strong>Maximizer</strong> - pushing good to great in people and systems.</li>
+                        <li><i data-lucide="wind"></i><strong>Adaptability</strong> - staying effective amid change.</li>
+                        <li><i data-lucide="shield-check"></i><strong>Responsibility</strong> - delivering on promises and commitments.</li>
+                        <li><i data-lucide="lightbulb"></i><strong>Ideation</strong> - generating creative and practical solutions.</li>
+                     </ul>
+                  </article>
+                  <article class="card">
+                     <h3>Tech toolkit</h3>
+                     <ul class="list">
+                        <li><i data-lucide="code-2"></i><strong>.NET 8 / C#</strong> - DDD, CQRS, async messaging, clean architecture</li>
+                        <li><i data-lucide="cloud"></i><strong>Azure</strong> - Functions, Service Bus, API Management, Cosmos DB</li>
+                        <li><i data-lucide="git-branch"></i><strong>CI/CD</strong> - Azure DevOps pipelines, quality gates, test automation</li>
+                        <li><i data-lucide="database"></i><strong>Databases & ORMs</strong> - SQL Server, MySQL · EF Core, Dapper</li>
+                        <li><i data-lucide="bug"></i><strong>Testing</strong> - unit & integration tests, Testcontainers, mocking</li>
+                     </ul>
+                  </article>
+               </div>
+               <article class="card" style="grid-column:1/-1">
+                  <h3>Why "Effikoy"?</h3>
+                  <p>
+                     In Esperanto, <em>efiko</em> means "effect" (plural: <em>efikoj</em> - outcomes). The brand stands for
+                     <strong>efficiency</strong> and <strong>real results</strong>: delivering impact, not just implementation.
+                  </p>
+                  <p style="margin:8px 0 0"><strong>Efficient Code. Real Effect.</strong></p>
+               </article>
+            </div>
+         </section>
+         <section id="contact" class="slide">
+            <div class="container" itemscope itemtype="https://schema.org/Person">
+               <h2 class="section-title">Contact</h2>
+               <p class="lead" style="margin:0 0 18px;color:var(--muted)">
+                  Let’s connect - I help teams design <strong>future-ready .NET &amp; Azure platforms</strong>, reduce
+                  complexity with <strong>event-driven architecture</strong>, and speed up delivery via <strong>CI/CD</strong>.
+                  Typical engagements: <em>architecture reviews</em>, <em>migration plans</em>, <em>hands-on microservices</em>,
+                  <em>observability</em> and <em>mentoring</em>.
+               </p>
+               <div class="card contact-card">
+                  <p class="contact-head">
+                     <strong itemprop="name">Piotr Jamiński</strong><br>
+                     <span itemprop="jobTitle">Lead .NET &amp; Azure Developer</span>
+                  </p>
+                  <div class="actions" role="group" aria-label="Contact actions">
+                     <a class="btn btn-primary"
+                        href="https://www.linkedin.com/in/piotr-jami%C5%84ski/"
+                        target="_blank" rel="noopener" itemprop="sameAs" aria-label="Open LinkedIn profile">
+                        <span class="icon" aria-hidden="true">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zM4.943 13.5V6.169H2.542V13.5h2.401zm-1.2-8.309c.837 0 1.358-.554 1.358-1.248-.015-.709-.521-1.248-1.342-1.248-.82 0-1.358.54-1.358 1.248 0 .694.52 1.248 1.327 1.248h.015zM13.458 13.5v-4.186c0-2.24-1.197-3.283-2.793-3.283-1.288 0-1.872.71-2.198 1.211v-1.04H6.066c.03.687 0 7.298 0 7.298h2.401V9.43c0-.217.016-.435.08-.591.173-.435.568-.887 1.232-.887.869 0 1.217.668 1.217 1.648V13.5h2.462z"/>
+                           </svg>
+                        </span>
+                        LinkedIn
+                     </a>
+                     <a class="btn btn-ghost"
+                        href="#"
+                        data-user="piotr" data-domain="effikoy.com"
+                        onclick="window.location.href='mailto:' + this.dataset.user + '@' + this.dataset.domain; return false;"       
+                        aria-label="Send email to Piotr">
+                        <span class="icon" aria-hidden="true">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.236l7.4 6.29a1 1 0 0 0 1.2 0L20 8.236V18H4z"/>
+                           </svg>
+                        </span>
+                        Email
+                     </a>
+                     <a class="btn btn-ghost"
+                        href="https://github.com/pjaminski"
+                        target="_blank" rel="noopener" itemprop="sameAs" aria-label="Open GitHub profile">
+                        <span class="icon" aria-hidden="true">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
+                                 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 
+                                 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+                                 0 0 .67-.21 2.2.82a7.48 7.48 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 
+                                 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2.0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                           </svg>
+                        </span>
+                        GitHub
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__inner">© <span id="y"></span> Effikoy - Piotr Jamiński</div>
+      </footer>
+      <!-- Scripts -->
+      <script src="https://unpkg.com/lucide@latest"></script>
+      <script src="js/main.js"></script>
+   </body>
 </html>
