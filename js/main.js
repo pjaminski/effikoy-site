@@ -115,3 +115,5 @@ if (btn){
   });
 }
 
+lucide.createIcons();
+
